@@ -2,7 +2,7 @@
 
 My personal portfolio website built with Next.js, showcasing my projects, blog, and travel experiences.
 
-**Live site:**
+**Live site:** ciciliu.xyz
 
 ## Tech Stack
 
