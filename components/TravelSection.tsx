@@ -236,17 +236,22 @@ export default function TravelSection() {
                   ))}
                 </div>
 
-                {/* Photos — only shown when photos exist */}
-                {info && info.photos.length > 0 && (
-                  <div className="space-y-2 mt-auto">
-                    <p className="text-xs font-mono text-black/30 uppercase tracking-widest">Photos</p>
+                {/* Photos */}
+                <div className="space-y-2 mt-auto">
+                  <p className="text-xs font-mono text-black/30 uppercase tracking-widest">Photos</p>
+                  {info && info.photos.length > 0 ? (
                     <div className="grid grid-cols-3 gap-1.5">
                       {info.photos.map((src, i) => (
                         <img key={i} src={src} alt="" className="w-full aspect-square object-cover rounded-lg" />
                       ))}
                     </div>
-                  </div>
-                )}
+                  ) : (
+                    <div className="flex items-center gap-2 py-3 px-3 rounded-xl bg-black/[0.03] border border-dashed border-black/10">
+                      <span className="text-lg">📷</span>
+                      <p className="text-xs text-black/35">More photos coming soon</p>
+                    </div>
+                  )}
+                </div>
               </motion.div>
             )}
           </AnimatePresence>

@@ -83,7 +83,7 @@ export default function Hero() {
           >
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              Open to Summer 2026 internships
+              Open to Fall 2026 internship opportunities
             </span>
           </motion.div>
 

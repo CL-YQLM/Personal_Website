@@ -5,9 +5,9 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    title: "DriveDash — John Deere Hackathon",
+    title: "Terra Glide — John Deere Hackathon",
     description:
-      "🥇 1st Place. Built a real-time autonomous vehicle control system in 36 hours for the John Deere Hackathon. Streamed live MJPEG video from an ESP32-CAM through a FastAPI backend and displayed it in a React dashboard. Integrated YOLOv8n person detection to automatically trigger a safety stop when a person entered the vehicle's path. Controlled motor speed (PWM), servo camera angle, dual lift mechanisms, and auxiliary motors over a rate-limited WebSocket proxy — all from a single browser interface.",
+      "🥇 1st Place, HackIllinois John Deere Mechathon Track. Built a real-time autonomous vehicle control system for the John Deere Hackathon. Streamed live MJPEG video from an ESP32-CAM through a FastAPI backend and displayed it in a React dashboard. Integrated YOLOv8n person detection to automatically trigger a safety stop when a person entered the vehicle's path. Controlled motor speed (PWM), servo camera angle, dual lift mechanisms, and auxiliary motors over a rate-limited WebSocket proxy — all from a single browser interface.",
     tags: ["React", "FastAPI", "Python", "ESP32", "YOLOv8", "WebSocket", "Computer Vision"],
     links: [
       { label: "GitHub", href: "" },
