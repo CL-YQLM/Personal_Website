@@ -68,8 +68,7 @@ export default function Projects() {
     <section id="projects" className="max-w-4xl mx-auto px-6 py-14">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="mb-12"
       >
@@ -82,8 +81,7 @@ export default function Projects() {
       <motion.div
         variants={containerVariants}
         initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, margin: "-80px" }}
+        animate="show"
         className="flex flex-col gap-5"
       >
         {projects.map((project) => (

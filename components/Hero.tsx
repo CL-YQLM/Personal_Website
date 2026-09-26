@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -27,7 +28,7 @@ export default function Hero() {
             animate="show"
             className="text-sm text-black/40 font-mono tracking-widest uppercase"
           >
-            Mechanical Engineering · UIUC · Class of 2029
+            Computer Engineering · UIUC · Class of 2029
           </motion.p>
 
           <motion.h1
@@ -47,8 +48,10 @@ export default function Hero() {
             animate="show"
             className="text-xl sm:text-2xl text-black/50 max-w-xl leading-relaxed"
           >
-            I build things at the intersection of hardware and software —
-            from embedded systems and PCB design to robotics and AI.
+            Firmware and embedded systems are my foundation, and I&apos;m now
+            getting into robot learning and human intent recognition. I&apos;m
+            working toward robots that understand what people want, from the
+            models down to the firmware and the board they run on.
           </motion.p>
 
           <motion.div
@@ -58,12 +61,12 @@ export default function Hero() {
             animate="show"
             className="flex flex-wrap gap-3 pt-2"
           >
-            <a
-              href="#projects"
+            <Link
+              href="/projects"
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-black text-white text-sm font-medium rounded-full hover:bg-black/80 transition-colors"
             >
               View Projects
-            </a>
+            </Link>
             <a
               href="/resume.pdf"
               target="_blank"
@@ -83,7 +86,7 @@ export default function Hero() {
           >
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              Open to Fall 2026 internship opportunities
+              Open to Summer 2027 internship opportunities
             </span>
           </motion.div>
 

@@ -1,32 +1,27 @@
 # Personal Website
 
-My personal portfolio website built with Next.js, showcasing my projects, blog, and travel experiences.
+My personal site: a short intro, the projects I've built, a travel page with an interactive globe, and a blog for whenever I get around to writing.
 
-**Live site:** ciciliu.xyz
+Live at [ciciliu.xyz](https://ciciliu.xyz).
 
-## Tech Stack
+## What's here
 
-- **Framework:** Next.js 16 (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS v4
-- **Animations:** Framer Motion
-- **3D Globe:** react-globe.gl
-- **Deployment:** Vercel
+- **About:** who I am and what I'm working on.
+- **Projects:** the hardware and software I've built.
+- **Travel:** an interactive globe of the places I've been.
+- **Blog:** writing, coming soon.
 
-## Features
+## Tech
 
-- Hero / about section
-- Projects showcase
-- Blog
-- Interactive travel globe
-- Contact section
-- Visitor counter (powered by Upstash Redis)
+Next.js (App Router) and React with TypeScript, styled with Tailwind CSS. Framer Motion for the animations, react-globe.gl for the globe, and a small visitor counter backed by Upstash Redis. Deployed on Vercel.
 
-## Running Locally
+## Running it locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Then open http://localhost:3000.
+
+The visitor counter looks for `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` in `.env.local`. Without them the count just stays hidden and the rest of the site works fine.

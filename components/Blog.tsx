@@ -7,8 +7,7 @@ export default function Blog() {
     <section id="blog" className="max-w-4xl mx-auto px-6 py-14">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="mb-12"
       >
@@ -19,15 +18,12 @@ export default function Blog() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.45 }}
-        className="flex flex-col items-center justify-center py-16 gap-3 border border-dashed border-black/15 rounded-2xl"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.15 }}
+        className="flex items-center justify-center py-24 border border-dashed border-black/10 rounded-2xl"
       >
-        <span className="text-3xl">✍️</span>
-        <p className="text-base font-medium text-black/50">More posts coming soon</p>
-        <p className="text-sm text-black/30">Stay tuned — thoughts on hardware, AI, and building things.</p>
+        <p className="text-sm text-black/35">Coming soon</p>
       </motion.div>
     </section>
   );

@@ -27,7 +27,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   return (
     <main className="max-w-2xl mx-auto px-6 py-24">
       <Link
-        href="/#blog"
+        href="/blog"
         className="inline-flex items-center gap-1 text-sm text-black/40 hover:text-black transition-colors mb-12 font-mono"
       >
         ← Back
